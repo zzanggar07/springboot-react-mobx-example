@@ -1,0 +1,155 @@
+/* @import url(./default.css); */
+.login-container{
+    width: 100%;
+    height: 100%;
+    /*background: #3493e2 url(../img/background.png) no-repeat;*/
+    background-size: cover;
+    background-position: center;
+}
+.login-layer,.join-layer{
+    width:870px;
+    height:520px;
+    background:#FFF;
+    position: absolute;
+    border-radius: 6px;
+    top: 50%;
+    left: 50%;
+    margin-top: -260px;
+    margin-left: -435px;
+    box-shadow: 0 1px 15px 0 rgba(0,0,0,0.1);
+    /*     overflow: hidden; */
+    animation-name:ani-open-layer;
+    animation-duration:500ms;
+    animation-delay:200ms;
+    animation-fill-mode: both;
+}
+@keyframes ani-open-layer{
+    from{
+        opacity:0;
+        transform:translateY(-30px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+.login-layer>div{
+    float:left;
+    height:100%;
+    position: relative;
+}
+.login-layer>.left{
+    width:500px;
+    background: linear-gradient(#FFF,#D5ECFE);
+    text-align: center;
+    padding: 100px 0;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+}
+.login-layer>.left::before{
+    content:'';
+    display:block;
+    width:6px;
+    height: 145px;
+    background:#05C1E6;
+    top:0;
+    right:0;
+    position:absolute;
+}
+.login-layer>.left img:first-child{
+    margin-bottom:60px;
+}
+.login-layer>.right{
+    width:370px;
+    padding: 115px 50px 0;
+}
+.login-layer>.right h5{
+    font-weight:900;
+    color: #05c2e6;
+}
+.login-layer>.right fieldset{
+    margin-top: 45px;
+}
+.login-layer>.right fieldset p{
+    height: 65px;
+}
+.login-layer>.right fieldset p input{
+    border:0;
+    border-radius:0;
+    border-bottom: 1px solid;
+    color: #AAA;
+    font-size: 14px;
+}
+.login-layer>.right fieldset p input::placeholder {color:#BBB;}
+
+.login-layer>.right fieldset p input.form-control{padding: .7rem .75rem;}
+.login-layer>.right fieldset p input.form-control:focus{
+    border-color:#05c2e6;
+    box-shadow: none;
+}
+.login-layer>.right fieldset p button{
+    width:90px;
+    border-radius:30px;
+    color:#FFF;
+    font-size: 14px;
+    font-weight:600;
+}
+.login-layer>.right fieldset p a{
+    font-size: 13px;
+    float:right;
+    color:#999;
+    display: inline-block;
+    line-height: 25px;
+    border-bottom: 1px solid #AAA;
+}
+
+.join-layer .modal-body dl{
+    padding-bottom:10px;
+}
+
+.join-layer .modal-body dd{
+    width: 310px;
+    padding-right: 30px;
+}
+.join-layer .modal-body dd.full{
+    width: 720px;
+}
+
+.modal-agree-box{
+    border-top:1px solid #DDE0E5;
+    padding:15px;
+}
+.modal-agree-box>div{line-height:36px;}
+.modal-agree-box>div>span{
+    width:45%;
+    display:inline-block;
+    text-align:right;
+    padding-right:10px;
+}
+.modal-agree-box>div>span a{
+    color:#1666D7;
+    font-size: 14px;
+    font-weight: 900;
+    text-decoration:underline;
+    font-family: 'NanumSquareR';
+}
+.modal-agree-box>div>label{
+    width:50%;
+    display:inline-block;
+    text-align:left;
+    padding-left:10px;
+}
+.modal-agree-box>div>label:hover{
+    color:#777;
+}
+.login-layer>.right fieldset .error-msg{
+    color:#ff7070;
+    font-size: 13px;
+    height: 40px;
+}
+.login-layer>.right fieldset .error-msg::before{
+    font-family:'font awesome 5 free';
+    content:'\f071';
+    font-weight:900;
+    margin-right:2px;
+}

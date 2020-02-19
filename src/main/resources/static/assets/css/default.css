@@ -1,0 +1,229 @@
+/* @import url(https://cdn.rawgit.com/moonspam/NanumSquare/master/nanumsquare.css); */
+/* @import url(font.css); */
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../../assets/fonts/NanumSquare/NanumSquareL.eot);
+    src: url(../../assets/fonts/NanumSquare/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/NanumSquare/NanumSquareL.woff) format('woff'),
+    url(../../assets/fonts/NanumSquare/NanumSquareL.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../assets/fonts/NanumSquare/NanumSquareR.eot);
+    src: url(../../assets/fonts/NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/NanumSquare/NanumSquareR.woff) format('woff'),
+    url(../../assets/fonts/NanumSquare/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../../assets/fonts/NanumSquare/NanumSquareB.eot);
+    src: url(../../assets/fonts/NanumSquare/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/NanumSquare/NanumSquareB.woff) format('woff'),
+    url(../../assets/fonts/NanumSquare/NanumSquareB.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 800;
+    src: url(../../assets/fonts/NanumSquare/NanumSquareEB.eot);
+    src: url(../../assets/fonts/NanumSquare/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/NanumSquare/NanumSquareEB.woff) format('woff'),
+    url(../../assets/fonts/NanumSquare/NanumSquareEB.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'NanumSquareL';
+    font-style: normal;
+    font-weight: 100;
+    src: url(../../assets/fonts/NanumSquare/NanumSquareL.eot);
+    src: url(../../assets/fonts/NanumSquare/NanumSquareL.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/NanumSquare/NanumSquareL.woff) format('woff'),
+    url(../../assets/fonts/NanumSquare/NanumSquareL.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquareR';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../assets/fonts/NanumSquare/NanumSquareR.eot);
+    src: url(../../assets/fonts/NanumSquare/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/NanumSquare/NanumSquareR.woff) format('woff'),
+    url(../../assets/fonts/NanumSquare/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquareB';
+    font-style: normal;
+    font-weight: 600;
+    src: url(../../assets/fonts/NanumSquare/NanumSquareB.eot);
+    src: url(../../assets/fonts/NanumSquare/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/NanumSquare/NanumSquareB.woff) format('woff'),
+    url(../../assets/fonts/NanumSquare/NanumSquareB.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumSquareEB';
+    font-style: normal;
+    font-weight: 900;
+    src: url(../../assets/fonts/NanumSquare/NanumSquareEB.eot);
+    src: url(../../assets/fonts/NanumSquare/NanumSquareEB.eot?#iefix) format('embedded-opentype'),
+    url(../../assets/fonts/NanumSquare/NanumSquareEB.woff) format('woff'),
+    url(../../assets/fonts/NanumSquare/NanumSquareEB.ttf) format('truetype');
+}
+
+
+*{
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    /* font-family: 'Nanum Gothic',NotoSans,'Open Sans',Arial,Helvetica,sans-serif; */
+    font-family: 'NanumSquare', sans-serif,Arial,Helvetica,sans-serif;
+    /* font-family:  sans-serif,Arial,Helvetica,sans-serif; */
+    font-weight: 400;
+    /* font-family: Arial, meiryo,'NanumSquare'; */
+    -webkit-touch-callout: none !important;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+span,div,p,ul,li{
+    -ms-user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+img{vertical-align: baseline;}
+.normal     { font-weight: 400 }
+.bold       { font-weight: 700 }
+.bolder     { font-weight: 800 }
+.light      { font-weight: 300 }
+a:hover{text-decoration:none;}
+::-webkit-scrollbar {width:6px;}
+::-webkit-scrollbar-track {background-color: rgba(0,0,0,0.1);}
+::-webkit-scrollbar-thumb {background-color: rgba(0,0,0,0.1);}
+i.fas::before{
+    font-family:fontawesome;
+    font-family: "Font Awesome 5 Free",fontawesome;
+    font-weight:900;
+}
+.fontb::before,.fonta::after{
+    font-family:Arial, "Font Awesome 5 Free",FontAwesome;
+    font-weight:900;
+}
+strong{font-weight:600;}
+textarea,input{
+    font-family:'NanumSquareR';
+    -webkit-appearance: none;
+    -webkit-border-radius: 0;
+}
+.input_full input{width:100%;}
+input[type=password]{
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+input.full{width:100%;}
+textarea.full{width:100%;height:150px;}
+textarea:focus, input:focus, button:focus{outline: none;}
+html,body{
+    background:#E2E5EE;
+    margin:0;
+    padding:0;
+    height:100%;
+    font-size:16px;
+    color: #333;
+}
+p,h2,h3,h4,ul,li,dl{margin:0;padding:0;list-style:none;}
+button{
+    padding: 8px 16px;
+    border: 0;
+    background: #F5F5F5;
+    color:#999;
+    border-radius: 2px;
+    font-size: 12px;
+    cursor:pointer;
+    border: 0.5px solid #E5E5E5;
+    margin-left:8px;
+}
+button:hover{
+    background: #EFEFEF;
+    box-shadow:0px 1px 0px 0px rgba(0,0,0,0.2);
+}
+button:active{
+    transform:translateY(1px);
+    box-shadow:none;
+    color:#EEE;
+    background: rgba(0,0,0,0.2);
+}
+button.default,button.btn-primary{
+    background: #06C2E7;
+    color:#EEE;
+    border:0;
+    min-width: 54px;
+}
+button.btn > i{padding:0;}
+
+
+/* font awesome style checkbox */
+label{
+    cursor:pointer;
+    font-size: 14px;
+    color: #9C9C9C;
+    margin: 0;
+    font-family:'NanumSquareL';
+    font-weight:600;
+}
+label>input[type=checkbox], label>input[type=radio]{
+    display:none;
+}
+label>input[type=checkbox]+i{
+    display:inline-block;
+    width: 18px;
+    height: 18px;
+    font-family:'font awesome 5 free';
+    font-weight:900;
+    font-style: normal;
+    font-size: 18px;
+    position:relative;
+    top: 3px;
+}
+label>input[type=checkbox]+i::before{
+    content:'\f0c8';
+    color: #bfc1c3;
+}
+label>input[type=checkbox]:checked+i::before{
+    content:'\f14a';
+    color:#05B3D5;
+}
+
+.btn{
+    border:1px solid #DDD;
+}
+.btn-default,.btn-white{
+    font-size: 13px;
+    line-height: 1.2;
+    font-weight: 600;
+    font-family: 'nanumsquareL';
+    border-radius: 0;
+}
+.btn-default{
+    color: #fff;
+    background-color: #05B3D5;
+    border-color: #05B3D5;
+}
+.btn-white{
+    color:#555;
+    background-color: #FFFF;
+    border-color: #E1E1E1;
+}
+.btn-sub{
+    color: #038CC9;
+    background: #D0F1F7;
+    border: 1px solid #D0F1F7;
+}
+.btn-default:hover,.btn-sub:hover,
+.btn-white:hover{
+    color:#FFF;
+    background-color: #0069d9;
+    border-color: #0062cc;
+}

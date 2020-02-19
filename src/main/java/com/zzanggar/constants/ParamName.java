@@ -1,0 +1,43 @@
+package com.zzanggar.constants;
+
+public interface ParamName {
+    String PASSWORD = "password";
+    String PAGE = "page";
+    String SIZE = "size";
+    String SORT = "sort";
+    String NAME = "name";
+    String EMAIL = "email";
+    String TOKEN = "token";
+    String GROUP = "group";
+    String SUMMARY = "summary";
+    String IP = "ip";
+    String PORT = "port";
+    String FILES = "files";
+    String USER_KEY = "userKey";
+    String TYPE = "type";
+    String CONTENT = "content";
+    String ICON_URL = "icon_url";
+    String USERNAME = "username";
+    String TEXT = "text";
+    String TITLE = "title";
+    String COMPANY = "company";
+    String PRODUCT_NAME = "productName";
+    String COMPANY_CODE = "companyCode";
+    String BUSINESS_CATEGORY = "businessCategory";
+    String COMPANY_NAME = "companyName";
+    String LICENSE_NUMBER = "licenseNumber";
+    String COMPANY_ADDRESS = "companyAddress";
+    String MANAGER_NAME = "managerName";
+    String POSITION = "position";
+    String DEPARTMENT = "department";
+    String TEL_NUMBER = "telNumber";
+    String PHONE_NUMBER = "phoneNumber";
+    String FAX_NUMBER = "faxNumber";
+    String FINAL_CREATOR = "finalCreator";
+    String MEMO = "memo";
+    String SEARCH_RULE = "searchRule";
+    String KEYWORD = "keyword";
+    String PERIOD_TYPE = "periodType";
+    String START_DATE = "startDate";
+    String END_DATE = "endDate";
+}

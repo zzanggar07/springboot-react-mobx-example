@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "strictNullChecks": true,
+        "sourceMap": true,
+        "strictFunctionTypes": true,
+        "noImplicitReturns": true,
+        "noImplicitThis": true,
+        "noImplicitAny": true,
+        "module": "commonjs",
+        "target": "es5",
+        "jsx": "react",
+        "experimentalDecorators": true,
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true
+    }
+}

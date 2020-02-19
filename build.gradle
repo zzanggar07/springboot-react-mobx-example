@@ -1,0 +1,122 @@
+group 'com.zzanggar.study'
+version '1.0.0'
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+repositories {
+    jcenter()
+}
+
+apply plugin: 'java'
+apply plugin: 'war'
+
+jar {
+    baseName = 'mobx-tsc-sample'
+    version =  '1.0.0'
+
+    manifest {
+        attributes 'Main-Class': 'org.zzanggar.Application'
+    }
+}
+
+compileJava {
+    options.encoding = 'UTF-8'
+    options.fork = true
+    options.forkOptions.executable = 'javac'
+    options.compilerArgs << '-XDignore.symbol.file'
+}
+
+sourceCompatibility = JavaVersion.VERSION_1_8
+targetCompatibility = JavaVersion.VERSION_1_8
+
+dependencies {
+    // Spring boot
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web'      , version: springBootVersion
+//    compile group: 'org.springframework.boot', name: 'spring-boot-starter-security' , version: springBootVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-jpa' , version: springBootVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-data-rest', version: springBootVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-websocket', version: springBootVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-actuator' , version: springBootVersion
+    compile group: 'org.springframework.boot', name: 'spring-boot-devtools'         , version: springBootVersion
+
+    // Spring
+    compile group: 'org.springframework', name: 'spring-context-support', version: '5.0.6.RELEASE'
+
+    // Security
+//    compile group: 'org.springframework.security.oauth', name: 'spring-security-oauth2' , version: '2.3.2.RELEASE'
+//    compile group: 'org.springframework.security'      , name: 'spring-security-jwt'    , version: '1.0.9.RELEASE'
+//    compile group: 'org.springframework.security'      , name: 'spring-security-taglibs', version: '5.0.5.RELEASE'
+//    compile group: 'io.jsonwebtoken'                   , name: 'jjwt'                   , version: '0.9.0'
+
+    // Servlet
+    compile group: 'javax.servlet', name: 'jstl', version: '1.2'
+
+    // Lombok (blogs.idincu.com/dev/?p=17)
+    compile group: 'org.projectlombok', name: 'lombok', version: '1.18.6'
+    annotationProcessor  group: 'org.projectlombok', name: 'lombok', version: '1.18.6'
+
+    // Upload
+    compile group: 'commons-fileupload', name: 'commons-fileupload', version: '1.3.3'
+
+    // docs
+    compile group: 'io.springfox', name: 'springfox-swagger2'  , version: swaggerVersion
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: swaggerVersion
+    compile group: 'org.webjars' , name: 'swagger-ui'          , version: '3.13.6'
+
+    // Model Mapper
+    compile group: 'org.modelmapper'           , name: 'modelmapper'       , version: modelmapperVersion
+    compile group: 'org.modelmapper.extensions', name: 'modelmapper-spring', version: modelmapperVersion
+    compile group: 'com.github.marschall'      , name: 'threeten-jpa'      , version: '1.10.0'
+
+    // Log
+    compile group: 'org.apache.logging.log4j', name: 'log4j-core', version: '2.13.0'
+    compile group: 'org.apache.logging.log4j', name: 'log4j-api', version: '2.13.0'
+
+    // Utils
+    compile group: 'org.apache.commons', name: 'commons-lang3'       , version: '3.4'
+    compile group: 'org.apache.commons', name: 'commons-collections4', version: '4.1'
+    compile group: 'commons-io'        , name: 'commons-io'          , version: '2.5'
+    compile group: 'commons-beanutils' , name: 'commons-beanutils'   , version: '1.9.3'
+
+    // Json
+    compile group: 'com.fasterxml.jackson.core'      , name: 'jackson-core'       , version: jacksonVersion
+    compile group: 'com.fasterxml.jackson.core'      , name: 'jackson-databind'   , version: jacksonVersion
+    compile group: 'com.fasterxml.jackson.core'      , name: 'jackson-annotations', version: jacksonVersion
+    compile group: 'com.fasterxml.jackson.dataformat', name: 'jackson-dataformat-csv', version: '2.9.1'
+
+    // configuration
+    compile group: 'org.apache.commons', name: 'commons-configuration2', version: '2.1'
+
+    // Reflections
+    compile 'org.reflections:reflections:0.9.11'
+
+    // RxJava
+    compile group: 'io.reactivex.rxjava2', name: 'rxjava', version: rxJavaVersion
+
+    // DB
+    compile group: 'com.h2database', name: 'h2', version: '1.4.192'
+
+    // Embed
+    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-core'  , version: tomcatVersion
+    compile group: 'org.apache.tomcat.embed', name: 'tomcat-embed-jasper', version: tomcatVersion
+
+//    // Google Speech
+//    compile group: 'com.google.api-client', name: 'google-api-client'  , version: '1.22.0'
+//    compile group: 'com.google.cloud'     , name: 'google-cloud-speech', version: '0.22.0-alpha'
+
+    // Excel
+    compile group: 'net.sf.jxls'    , name: 'jxls-core'     , version: '1.0.6'
+    compile group: 'org.jxls'       , name: 'jxls'          , version: '2.4.3'
+    compile group: 'org.jxls'       , name: 'jxls-poi'      , version: '1.0.14'
+    compile group: 'org.jxls'       , name: 'jxls-jexcel'   , version: '1.0.6'
+    compile group: 'org.apache.poi' , name: 'poi'           , version: '3.17'
+    compile group: 'org.apache.poi' , name: 'poi-ooxml'     , version: '3.17'
+}

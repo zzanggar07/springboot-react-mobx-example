@@ -1,0 +1,88 @@
+# Message
+message:
+  source:
+    basename: i18n/messages
+
+product:
+  name: zzanggar
+
+path:
+  resources: /BOOT-INF/classes/META-INF/resources
+  voice: ${user.home}/upload
+
+# Key
+key:
+  file: zzanggar.jks
+  password: zzanggar417
+  alias: zzanggar
+
+# Server
+server:
+  analytics:
+    url: http://localhost:8080
+  error:
+    whitelabel:
+      enabled: false
+  port: 9500
+  devtools:
+    livereload:
+      enabled: true
+  freemarker:
+    cache: false
+
+# Log
+logging:
+  file: .${product.name}/log/${product.name}.log
+  level:
+    org.springframework:
+      boot: warn
+      security: warn
+    org.hibernate.SQL: warn
+
+# Spring
+spring:
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+  servlet:
+    multipart:
+      max-file-size: 1000MB
+      max-request-size: 1000MB
+  jpa:
+    database: h2
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+      naming:
+        implicit-strategy: org.springframework.boot.orm.jpa.hibernate.SpringImplicitNamingStrategy
+        physical-strategy: org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy
+      use-new-id-generator-mappings: true
+  datasource:
+    platform: h2
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:file:~/.${product.name}/db/${product.name};MVCC=TRUE;DB_CLOSE_ON_EXIT=TRUE;FILE_LOCK=NO
+    username: sa
+    password: sa
+  jackson:
+    property-naming-strategy: LOWER_CAMEL_CASE
+  session:
+    store-type: none
+
+# Security
+security:
+  oauth2:
+    authorization:
+      token-key-access: isAuthenticated()
+
+---
+
+spring:
+  profiles: dev
+
+---
+
+spring:
+  profiles: real
+
+# keytool -genkeypair -alias zzanggar -keyalg RSA -dname "CN=Web Server,OU=Unit,O=Organization,L=City,S=State,C=US" -keypass zzanggar417 -keystore zzanggar.jks -storepass zzanggar417
