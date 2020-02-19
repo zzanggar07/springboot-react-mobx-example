@@ -1,0 +1,10 @@
+# Created by .ignore support plugin (hsz.mobi)
+.gradle
+.idea
+/build
+/node_modules
+/out
+/src/main/resources/static/js/bundle.js
+*.iml
+.DS_Store
+.zzanggar
