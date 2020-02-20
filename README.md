@@ -1,4 +1,4 @@
-# Spring Boot 프로젝트에 React, Mobx-state-tree,  rest api테스트, 각종 리엑트 컴포넌트등의 개인 데모 용도
+# Spring Boot 프로젝트에 React, Mobx-state-tree,  REST API테스트, 각종 리엑트 컴포넌트 테스트 용도
 
 spring 2.0을 사용하고 react.js를 프론트단으로 하고 spring boot를 rest API서버로 사용하고 있습니다
 
