@@ -9,7 +9,7 @@
     <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0"/> -->
     <meta name="apple-mobile-web-app-capable" content="yes"/>
     <link rel="apple-touch-icon" href="/static/assets/img/appicon2.png" />
-    <title>VODA BI</title>
+    <title>모듈테스트</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
     <link href="/static/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
