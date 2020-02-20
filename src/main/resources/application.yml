@@ -4,7 +4,7 @@ message:
     basename: i18n/messages
 
 product:
-  name: zzanggar
+  name: demo
 
 path:
   resources: /BOOT-INF/classes/META-INF/resources
