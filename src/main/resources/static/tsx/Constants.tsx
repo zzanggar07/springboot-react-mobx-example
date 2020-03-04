@@ -16,12 +16,7 @@ export const NET_RES_STATUS = {
     FAILED: 'FAILED',
     SUCCESS: 'SUCCESS',
 }
-export const AUDIO_STATE = {
-    PAUSE: 2,
-    PLAY: 1,
-    SEEK: 3,
-    STOP: 0,
-}
+
 export const SEARCH_RULE_TYPE = {
     COMPANY_NAME: 'COMPANY_NAME',
     EMAIL: 'EMAIL',
